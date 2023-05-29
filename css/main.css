@@ -1,0 +1,325 @@
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+.regular-text {
+  font-family: Tahoma, serif;
+  font-size: 18px;
+}
+.paragraph-header {
+  font-family: Tahoma, serif;
+  color: #00709E;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.contact-info {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+
+
+button {
+  /*all: unset;*/
+}
+
+.header {
+  height: auto;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+}
+
+.navigation-bar {
+  background-color: #1D3553 !important;
+  height: 65px;
+  color: white;
+}
+.search-bar {
+  background-color: white;
+  margin-right: 24px;
+}
+
+.main-image {
+  /*background-image: url("img/main-image.png");*/
+  /*background-color: darkorange;*/
+  background-size: cover;
+  /*height: 414px;*/
+  aspect-ratio: 3/1;
+}
+
+.card-img-overlay {
+  height: 100%;
+  width: 100%;
+  /*padding: 50px;*/
+  align-items: center;
+  justify-items: center;
+
+}
+.card {
+  border: none !important;
+}
+.card-text {
+  color: white;
+}
+.introduction {
+  margin-bottom: 30px;
+}
+
+.badge-stat {
+  background-color: #00709E;
+  color: white;
+  font-family: Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  /*justify-content: space-between;*/
+  border-radius: 5px;
+}
+
+.logo-info {
+  width: 50px;
+  margin-right: 3px;
+  align-self: center;
+  color: white;
+}
+
+.badge-info__text {
+  margin: auto;
+}
+
+.delimiter {
+  height: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.delimiter-card {
+  height: 4px;
+}
+
+.delimiter__blue {
+  background-color: #1D3553;
+}
+.delimiter__green {
+  background-color: #00B529;
+}
+.delimiter__grey {
+  background-color: black;
+  height: 1px;
+}
+
+
+.tariffs {
+  /*height: 850px;*/
+  z-index: 10;
+  aspect-ratio: 2/1;
+  background-image: url(/img/favpng_antarctic-sea-iceberg.png);
+  background-size: cover;
+  background-color: aliceblue;
+}
+
+.tariffs-card{
+
+}
+
+.carousel {
+  /*height: 520px;*/
+  padding: 20px 20px 50px;
+  background-size: cover;
+
+}
+
+.tariff-card {
+  display: flex;
+  flex-direction: column;
+
+  /*justify-content: space-between; */
+  aspect-ratio: 306 / 455;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0;
+
+}
+
+.tariff-card__flat {
+ margin: 25px 3px
+}
+
+.tariff-card:hover {
+  background-color: #D9D9D9;
+}
+
+.card-pic {
+  border-radius: 10px;
+  width: 207px;
+}
+.card-picflat {
+  border-radius: 10px;
+  width: 130px;
+  height: 130px;
+  aspect-ratio: 1/1;
+}
+.tariff-logoflat {
+  width: 50px;
+  height:50px;
+  align-self: end;
+}
+.header-flat {
+  font-size: 20px;
+}
+.tariff-sign {
+  margin: 15px 15px 0 0;
+}
+.tariff-card__header, .tariff-content {
+  margin: 0 15px;
+}
+.tariff-card__header {
+  margin-top: 10px;
+}
+.square {
+  aspect-ratio: 1/1;
+}
+
+.slogan {
+  color: #00709E;
+}
+
+.details-button {
+  border: none;
+  margin: 10px 30px 20px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #1D3553;
+}
+
+.tariff-card_carousel {
+  height: 480px;
+  margin: 0 auto;
+}
+
+.description-header {
+  font-family: Tahoma, sans-serif;
+  color: #00709E;
+  font-weight: bold;
+}
+
+.album {
+  display: flex;
+  /*flex-wrap: wrap;*/
+}
+
+.album-cover__container {
+  flex: 3;
+  /*position: relative;*/
+}
+.album_additional {
+  position: relative;
+  width: 220px;
+}
+.album-cover {
+  aspect-ratio: 1080/720;
+  align-self: start;
+}
+
+.album_additional {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-photo {
+  flex: 1;
+  aspect-ratio: 220/170;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+
+.pic-bullet {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.sefl {
+  aspect-ratio: 1/1 !important;
+}
+
+/*.booking-button {*/
+/*  background-color: #00B529;*/
+/*  width: 90%;*/
+/*  border-radius: 10px;*/
+/*  align-self: center;*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/*.regular-text {*/
+/*  font-size: 14px !important;*/
+/*}*/
+@media (min-width: 576px) {
+  .regular-text {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-info {
+    width: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .regular-text {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .additional-photo {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .tariffs-card {
+    display: none !important;
+  }
+  .details-button {
+    margin: 0 30px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .tariffs-carousel {
+    display: none !important;
+  }
+  .regular-text {
+    font-size: 28px !important;
+  }
+  .delimiter-card {
+    margin: 5px 0 ;
+  }
+}
+@media (min-width: 1200px) {
+
+  .regular-text {
+    font-size: 30px !important;
+  }
+}
