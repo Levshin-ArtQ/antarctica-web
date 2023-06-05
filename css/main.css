@@ -1,7 +1,9 @@
 
 img {
-  vertical-align: middle;
+  vertical-align: top;
+  horiz-align: right;
   object-fit: cover;
+  border: 0;
 }
 
 
@@ -54,11 +56,15 @@ button {
 }
 
 .main-image {
-  /*background-image: url("img/main-image.png");*/
+  background-image: url("/img/main-image.png");
   /*background-color: darkorange;*/
   background-size: cover;
   /*height: 414px;*/
   aspect-ratio: 3/1;
+}
+
+.feel_text {
+  margin: auto 0;
 }
 
 .card-img-overlay {
@@ -131,6 +137,11 @@ button {
   background-image: url(/img/favpng_antarctic-sea-iceberg.png);
   background-size: cover;
   background-color: aliceblue;
+  padding-bottom: 30px;
+}
+
+.tariffs__header {
+  padding: 20px;
 }
 
 .tariffs-card{
@@ -224,10 +235,6 @@ button {
   /*flex-wrap: wrap;*/
 }
 
-.album-cover__container {
-  flex: 3;
-  /*position: relative;*/
-}
 .album_additional {
   position: relative;
   width: 220px;
@@ -237,20 +244,16 @@ button {
   align-self: start;
 }
 
-.album_additional {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .additional-photo {
   flex: 1;
   aspect-ratio: 220/170;
 }
 
-.book-card {
+.book-card__inner {
   display: flex;
   flex-direction: column;
-  height: 400px;
   justify-content: space-between;
 }
 
@@ -258,24 +261,38 @@ button {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  justify-content: space-between;
+}
+
+.ship {
+  margin-right: 10px;
+}
+.bell {
+  margin-right: 30px;
 }
 
 .sefl {
   aspect-ratio: 1/1 !important;
 }
+.footer {
+  font-family: Tahoma, Serif, serif;
+  background-color: #1D3553;
+  color: white;
+  padding-bottom: 30px;
+}
+.links {
+  margin: 20px 0;
+}
+.footer-link {
+  color: white;
+}
+.award {
+  margin-bottom: 20px;
+}
+.award-text {
+  margin-right: 20px;
+}
 
-/*.booking-button {*/
-/*  background-color: #00B529;*/
-/*  width: 90%;*/
-/*  border-radius: 10px;*/
-/*  align-self: center;*/
-/*  margin-top: 10px;*/
-/*}*/
 
-/*.regular-text {*/
-/*  font-size: 14px !important;*/
-/*}*/
 @media (min-width: 576px) {
   .regular-text {
     font-size: 18px !important;
@@ -285,6 +302,9 @@ button {
 @media (max-width: 576px) {
   .logo-info {
     width: 35px;
+  }
+  .navigation-bar-fluid {
+    background-color: #1D3553;
   }
 }
 
@@ -297,6 +317,35 @@ button {
   .additional-photo {
     display: none !important;
   }
+  .book-card__inner {
+    height: 355px;
+  }
+  .card-text-1 {
+    font-size: 30px;
+  }
+  .card-text-2 {
+    font-size: 20px;
+  }
+  .contact-info {
+    font-size: 18px;
+  }
+  .navigation-route {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .infographics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge-stat {
+    margin-bottom: 10px;
+  }
+  .footer {
+    font-size: 15px;
+  }
+  .book-card {
+    margin: 30px 0 !important;
+  }
 }
 @media (max-width: 992px) {
   .tariffs-card {
@@ -304,6 +353,13 @@ button {
   }
   .details-button {
     margin: 0 30px 30px;
+  }
+  .book-card__inner>.regular-text, .pic-bullet>.regular-text {
+    font-size: 22px !important;
+  }
+  .additional-photo {
+    width: 165px;
+    aspect-ratio: 1/1 !important;
   }
 }
 @media (min-width: 992px) {
@@ -313,12 +369,30 @@ button {
   .regular-text {
     font-size: 28px !important;
   }
+  .card-text-1 {
+    font-size: 60px;
+  }
+  .card-text-2 {
+    font-size: 35px;
+  }
   .delimiter-card {
     margin: 5px 0 ;
   }
+  .additional-photo {
+    aspect-ratio: 1/1 !important;
+    height: 11px !important;
+  }
+  .book-card__inner>.regular-text, .pic-bullet>.regular-text {
+    font-size: 25px !important;
+  }
 }
 @media (min-width: 1200px) {
-
+  footer {
+    font-size: 19px;
+  }
+  .book-card__inner {
+    height: 455px;
+  }
   .regular-text {
     font-size: 30px !important;
   }
