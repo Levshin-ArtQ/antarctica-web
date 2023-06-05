@@ -25,7 +25,7 @@
     </header>
   </div>
 
-  <div class="container-fluid ">
+  <div class="container-fluid navigation-bar-fluid">
     <div class="container navigation-bar">
       <nav class="navigation-bar row justify-content-between align-content-center">
         <div class="col navigation-route">home > Cruise > antarctica > Superior</div>
@@ -34,13 +34,10 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="card text-center row border-0">
-      <img src="img/main-image.png" alt="" class="card-img">
-      <div class="card-img-overlay ">
-        <h1 class="card-text">Feel the Antarctica</h1>
-        <h3 class="card-text">Thrilling adventure with camping, kayaking and hiking</h3>
-      </div>
+  <div class="container main-image d-flex flex-column align-items-center justify-items-center">
+    <div class="feel_text text-center">
+      <h1 class="card-text card-text-1 ">Feel the Antarctica</h1>
+      <h3 class="card-text card-text-2">Thrilling adventure with camping, kayaking and hiking</h3>
     </div>
   </div>
 
@@ -67,22 +64,22 @@
 
 
   <div class="infographic-wrapper container">
-    <div class="row justify-content-around ">
-      <div class="badge-stat d-flex align-items-center col-3">
+    <div class="row justify-content-around infographics d-flex">
+      <div class="badge-stat d-flex align-items-center col-6 col-md-3">
         <img src="img/like-svgrepo-com.svg" alt="" class="logo-info logo-info__heart">
         <div class="badge-info__text">
           <span class="value">1000 </span>
           <span class="word">liked</span>
         </div>
       </div>
-      <div class="badge-stat col-3">
+      <div class="badge-stat d-flex align-items-center col-6 col-md-3">
         <img src="img/check-svgrepo-com.svg" alt="" class="logo-info logo-info__check">
         <div class="badge-info__text">
           <span class="value">1500 </span>
           <span class="word">tried</span>
         </div>
       </div>
-      <div class="badge-stat col-3">
+      <div class="badge-stat d-flex align-items-center col-6 col-md-3">
         <img src="img/heart-svgrepo-com.svg" alt="" class="logo-info logo-info__heart">
         <div class="badge-info__text">
           <span class="value">900 </span>
@@ -96,7 +93,7 @@
 
 <!--  <div class="container-fluid">-->
     <div class="container tariffs tariffs-card ">
-      <h2 class="paragraph-header row">Tariffs</h2>
+      <h2 class="paragraph-header tariffs__header row">Tariffs</h2>
 
       <div class="cards row justify-content-around align-self-center">
         <div class="tariff-card justify-content-between tariff-card__flat d-flex flex-column"></div>
@@ -107,9 +104,9 @@
     </div>
 <!--  </div>-->
 
-  <div class="container-fluid crsl">
+<!--  <div class="container-fluid crsl">-->
     <div class="container tariffs tariffs-carousel">
-      <h2 class="paragraph-header row">Tariffs</h2>
+      <h2 class="paragraph-header tariffs__header row">Tariffs</h2>
 
       <div class="carousel slide row align-content-center" data-interval="false" id="carouselTariffIndicators">
       <ol class="carousel-indicators">
@@ -137,37 +134,40 @@
       </a>
     </div>
     </div>
-  </div>
+<!--  </div>-->
 
     <div class="tariff-description container">
-      <div class="row">
-        <h2 class="paragraph-header description-header col-12 text-center">Tariff extreme</h2>
-
+      <h2 class="paragraph-header description-header col-12 text-center">Tariff extreme</h2>
+      <div class="row d-flex flex-column flex-md-row">
 <!--        <div class="pic-and-offer">-->
-        <div class="album col-8 flex-column flex-lg-row flex-xl-row flex-xxl-row">
+        <div class="album col-12 col-md-6 col-lg-8 flex-column flex-lg-row">
           <div class="album-cover__container">
-            <img src="img/happy-kayaker.jpg" alt="album-cover" class="img-fluid ">
+            <img src="img/happy-kayaker.jpg" alt="album-cover" class="img-fluid album-cover">
           </div>
-          <div class="album_additional d-flex flex-row flex-lg-column flex-xl-column flex-xxl-column">
+          <div class="album_additional d-flex flex-row flex-lg-column">
             <img src="img/Antarctica%20highest%20point.jpg" alt="additional-photo" class="img-fluid additional-photo">
             <img src="img/seel.jpg" alt="additional-photo" class="img-fluid additional-photo">
           </div>
         </div>
 
-        <div class="book-card col-4 col-sm-push-4 al">
-          <h3 class="book-card__header">Extreme Antarctica</h3>
-          <div class="delimiter-card delimiter__green"></div>
-          <span class="charts regular-text">Complexity: Pro</span>
-          <span class="charts regular-text">Group size: up to 12</span>
-          <div class="delimiter-card delimiter__grey"></div>
-          <div class="pic-bullet"><img src="img/ship_nights.svg" alt="" class="pic-bullet__logo"><span class="pic-bullet__text regular-text">12 nights on ship</span>
+        <div class="book-card col-8 col-md-5 col-lg-4 align-self-center">
+          <div class="book-card__inner">
+            <h3 class="book-card__header text-center">Extreme Antarctica</h3>
+            <div class="delimiter-card delimiter__green"></div>
+            <span class="charts regular-text">Complexity: Pro</span>
+            <span class="charts regular-text">Group size: up to 12</span>
+            <div class="delimiter-card delimiter__grey"></div>
+            <div class="pic-bullet"><img src="img/ship_nights.svg" alt="" class="pic-bullet__logo ship"><span class="pic-bullet__text regular-text">12 nights on ship</span>
+            </div>
+            <div class="pic-bullet"><img src="img/bell.svg" alt="" class="pic-bullet__logo bell"><span class="pic-bullet__text regular-text">cost are changing book tour in advance</span>
+            </div>
+            <button class="booking-button btn btn-success">
+              Book
+            </button>
           </div>
-          <div class="pic-bullet"><img src="img/bell.svg" alt="" class="pic-bullet__logo"><span class="pic-bullet__text regular-text">cost are changing book tour in advance</span>
-          </div>
-          <button class="booking-button btn btn-success">
-            Book
-          </button>
         </div>
+      </div>
+      <div class="row">
         <span class="col tariff-description__text regular-text text-justify col-12">
           Paddle through icy waters on a kayak,
           hike across glaciers and mountains,
@@ -197,8 +197,8 @@
 
   <div class="animals container">
     <div class="row justify-content-between">
-        <img src="img/seel.jpg" alt="" class="img-fluid seel-2 col-6">
-        <p class="animals__text regular-text col-6 text-justify">
+        <img src="img/seel.jpg" alt="" class="img-fluid seel-2 col-12 col-md-6">
+        <p class="animals__text regular-text col-12 col-md-6 text-justify">
           But that's not all! Our tour also includes sightseeing opportunities, where you'll have the chance to see
           penguins, seals, and other wildlife up close. You'll also visit scientific research stations and learn about
           the important work being done to study and protect this incredible environment.
@@ -208,10 +208,40 @@
           the world's most remote and untouched wilderness. But don't worry, our expert guides are there to ensure your
           safety and provide support every step of the way.
         </p>
-
       </div>
     </div>
+
+  <div class="container iceberg">
+    <img src="img/imgbin_south-pole-iceberg-ocean-png.png" alt="" class="iceberg-delimiter img-fluid"></div>
   </div>
+<footer class="footer container-fluid">
+  <div class="footer container footer__text d-flex flex-column">
+    <div class="links d-flex justify-content-between flex-wrap">
+      <a class="footer-link " href="">Other tours</a>
+      <span>|</span>
+      <a class="footer-link " href="">Partners</a>
+      <span>|</span>
+      <a class="footer-link " href="">Terms & conditions</a>
+      <span>|</span>
+      <a class="footer-link " href="">Privacy Policy</a>
+      <span>|</span>
+      <a class="footer-link" href="">More about us</a>
+    </div>
+    <div class="award d-flex justify-content-lg-end justify-content-md-end justify-content-center">
+      <div class="award-text d-flex flex-column align-content-center align-self-center align-self-lg-start text-center text-md-right">
+        <span class="award-name">The World Travel Awards™ Winner </span>
+        <span class="years">2008-2009</span>
+        <span class="years">2011-2012</span>
+        <span class="years">2022-2023</span>
+      </div>
+      <img src="img/WTA-WinnerWallPlaque-Recessed-2022-200px.png" alt="" class="award-img  col-3 col-md-2"></div>
+    <span>© 2005—2023 GlobalNomad, Inc. All rights reserved. New York, 5th Moment Street</span>
+    <span>This web-page is made by: <a href="">@LevshinArt</a></span>
+    <span>Cookie Policy</span>
+  </div>
+</footer>
+
+
 
 
 
@@ -222,3 +252,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+
