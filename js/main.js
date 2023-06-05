@@ -75,6 +75,7 @@ const cardBuilder = function cardBuilder(type, tariff) {
 }
 
 const types = ["PRO", "ADV", "START", "BEGIN"];
+const costs = ["1999$", "1699$", "1599$", "1399$"];
 const cardHoldersCarousel = document.querySelectorAll(".tariff-card_carousel");
 for (let i = 0; i < cardHoldersCarousel.length; ++i) {
   cardHoldersCarousel[i].innerHTML += cardBuilder("", types[i%4]);
