@@ -53,8 +53,12 @@ button {
 .search-bar {
   background-color: white;
   margin-right: 24px;
+  padding: 3px 5px !important;
 }
-
+.search {
+  width: 20px;
+  height: 20px;
+}
 .main-image {
   background-image: url("/img/main-image.png");
   /*background-color: darkorange;*/
@@ -205,7 +209,9 @@ button {
 .square {
   aspect-ratio: 1/1;
 }
-
+.article {
+  margin-top: 20px;
+}
 .slogan {
   color: #00709E;
 }
@@ -235,21 +241,15 @@ button {
   /*flex-wrap: wrap;*/
 }
 
-.album_additional {
-  position: relative;
-  width: 220px;
-}
+
 .album-cover {
-  aspect-ratio: 1080/720;
-  align-self: start;
+  /*aspect-ratio: 1080/720;*/
+  /*align-self: start;*/
 }
 
 
 
-.additional-photo {
-  flex: 1;
-  aspect-ratio: 220/170;
-}
+
 
 .book-card__inner {
   display: flex;
@@ -284,6 +284,9 @@ button {
 }
 .footer-link {
   color: white;
+}
+.footer-link:hover {
+  color: aliceblue;
 }
 .award {
   margin-bottom: 20px;
@@ -378,9 +381,12 @@ button {
   .delimiter-card {
     margin: 5px 0 ;
   }
+  .album-cover {
+    height: 304px!important;
+  }
   .additional-photo {
+    height: 152px !important;
     aspect-ratio: 1/1 !important;
-    height: 11px !important;
   }
   .book-card__inner>.regular-text, .pic-bullet>.regular-text {
     font-size: 25px !important;
@@ -395,5 +401,12 @@ button {
   }
   .regular-text {
     font-size: 30px !important;
+  }
+  .album-cover {
+    height: 364px!important;
+  }
+  .additional-photo {
+    height: 182px !important;
+    aspect-ratio: 1/1 !important;
   }
 }
