@@ -50,6 +50,12 @@ button {
   height: 65px;
   color: white;
 }
+.navf-link {
+  color: white;
+}
+.nav-arrow {
+  margin: 0 5px;
+}
 .search-bar {
   background-color: white;
   margin-right: 24px;
@@ -275,6 +281,7 @@ button {
 }
 .footer {
   font-family: Tahoma, Serif, serif;
+  font-weight: bold;
   background-color: #1D3553;
   color: white;
   padding-bottom: 30px;
